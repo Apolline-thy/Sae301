@@ -1,0 +1,248 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+  </head>
+  <body class="bg-bg font-serif">
+    <!-- Navigation -->
+    <nav class="fixed top-0 z-50 w-full bg-white px-7 py-4 md:px-8">
+      <header class="flex items-center justify-between px-16">
+        <h1 class="text-3xl tracking-wide">LADURÉE</h1>
+        <section class="flex items-center space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+            />
+          </svg>
+
+          <a href="./pages/panier.html">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+              />
+            </svg>
+          </a>
+        </section>
+      </header>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="mt-16 flex h-96 md:h-screen">
+      <img
+        src="./public/assets/hero-section.jpg"
+        alt="Macarons et thé"
+        class="h-full w-full object-cover"
+      />
+    </section>
+
+    <!-- Filter Navigation -->
+    <nav class="flex items-center justify-between border-b px-16 py-6">
+      <ul class="flex flex-row items-center space-x-2 md:space-x-4">
+        <li>
+          <a href="#" class="hover:text-subtext md:text-base lg:text-3xl"
+            >Tous nos produits</a
+          >
+        </li>
+        <li class="text-gray-300">•</li>
+        <li>
+          <a href="#" class="hover:text-subtext md:text-base lg:text-3xl"
+            >Macarons</a
+          >
+        </li>
+        <li class="text-gray-300">•</li>
+        <li>
+          <a href="#" class="hover:text-subtext md:text-base lg:text-3xl"
+            >Thé</a
+          >
+        </li>
+        <li class="text-gray-300">•</li>
+        <li>
+          <a href="#" class="hover:text-subtext md:text-base lg:text-3xl"
+            >Chocolats</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <!-- Product Grid -->
+    <main class="container mx-auto px-4 py-8 md:px-8 md:py-12">
+      <section class="grid grid-cols-2 gap-4 md:grid-cols-3 md:gap-8">
+        <!-- Product Cards -->
+        <article class="text-center">
+          <img
+            src="./public/assets/macarons-verts.webp"
+            alt="Coffret de macarons Napoléon"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Coffret de macarons Napoléon</h3>
+          <p class="text-subtext text-sm lg:text-2xl">60,00 EUR</p>
+        </article>
+
+        <article class="text-center">
+          <a href="./pages/produit.html" class="block">
+            <img
+              src="./public/assets/macarons-roses.webp"
+              alt="Coffret de macarons Intemporel"
+              class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+            />
+            <h3 class="md:text-lg lg:text-2xl">
+              Coffret de macarons Intemporel
+            </h3>
+            <p class="text-subtext text-sm lg:text-2xl">60,00 EUR</p>
+          </a>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/macarons-Hal.webp"
+            alt="Coffret de macarons Halloween"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Coffret de macarons Halloween</h3>
+          <p class="text-subtext text-sm lg:text-2xl">60,00 EUR</p>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/thé-marie.webp"
+            alt="Thé marie Antoinette"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Boîte de thé Marie-Antoinette</h3>
+          <p class="text-subtext text-sm lg:text-2xl">22,00 EUR</p>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/thé nuit.webp"
+            alt="Thé mille et unes nuits"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Boîte de thé 1001 nuits</h3>
+          <p class="text-subtext text-sm lg:text-2xl">22,00 EUR</p>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/thé.webp"
+            alt="Thé jardin bleu royal"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Boîte de thé Jardin Bleu Royal</h3>
+          <p class="text-subtext text-sm lg:text-2xl">22,00 EUR</p>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/perles.webp"
+            alt="Perles chocolatées"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Perles chocolatées</h3>
+          <p class="text-subtext text-sm lg:text-2xl">9,80 EUR</p>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/citronettes.webp"
+            alt="Coffret de citronettes"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Coffret de citronettes</h3>
+          <p class="text-subtext text-sm lg:text-2xl">24,00 EUR</p>
+        </article>
+        <article class="text-center">
+          <img
+            src="./public/assets/oursons.webp"
+            alt="Duo d’oursons guimauve"
+            class="mb-4 h-56 w-full object-contain md:h-96 lg:h-96"
+          />
+          <h3 class="md:text-lg lg:text-2xl">Duo d’oursons guimauve</h3>
+          <p class="text-subtext text-sm lg:text-2xl">12,00 EUR</p>
+        </article>
+      </section>
+    </main>
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-green w-full border-t border-gray-300 px-12 py-12">
+      <section
+        class="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row"
+      >
+        <!-- Colonne gauche -->
+        <h2 class="font-serif text-4xl tracking-wide text-gray-800">LADURÉE</h2>
+
+        <!-- Colonnes de liens -->
+        <section class="grid w-full grid-cols-1 gap-12 sm:grid-cols-3 md:w-3/5">
+          <!-- Colonne 1 : Produits -->
+          <ul class="space-y-3">
+            <h3 class="mb-3 text-xl font-semibold">Produits</h3>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline"
+                >Macarons</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline">Thés</a>
+            </li>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline"
+                >Chocolats</a
+              >
+            </li>
+          </ul>
+
+          <!-- Colonne 2 : Conditions -->
+          <ul class="space-y-3">
+            <h3 class="mb-3 text-xl font-semibold">Conditions</h3>
+
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline"
+                >Mentions légales</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline"
+                >Politique de Confidentialité</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline">CGV</a>
+            </li>
+          </ul>
+
+          <!-- Colonne 3 : Contact -->
+          <ul class="space-y-3">
+            <h3 class="mb-3 text-xl font-semibold">Contact</h3>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline"
+                >21 rue de la Démo</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline"
+                >75000, Paris</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:text-subtext hover:underline">France</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Ligne du bas -->
+      <section
+        class="text-subtext mt-12 border-t border-gray-300 pt-6 text-center text-sm"
+      >
+        © 2025 Ladurée Paris. Tous droits réservés.
+      </section>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Panier - Ladurée</title>
+    <link href="/src/style.css" rel="stylesheet" />
+  </head>
+
+  <body class="bg-bg font-serif">
+    <!-- Navigation -->
+    <nav class="fixed top-0 z-50 w-full bg-white px-7 py-4 md:px-8">
+      <header class="flex items-center justify-between px-16">
+        <a href="../index.html" class=""
+          ><h1 class="text-3xl tracking-wide">LADURÉE</h1></a
+        >
+        <section class="flex items-center space-x-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="h-10 w-10"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z"
+            />
+          </svg>
+
+          <a href="./index-Panier.html" class="">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-10 w-10"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z"
+              />
+            </svg>
+          </a>
+        </section>
+      </header>
+    </nav>
+
+    <!-- Contenu principal -->
+    <section class="flex-col pb-20">
+      <main class="mt-28 flex flex-row justify-center gap-24">
+        <!-- Panier des articles -->
+        <section class="flex flex-col gap-12">
+          <h1 class="text-6xl">MON PANIER</h1>
+
+          <!-- Article 1 -->
+          <article class="flex flex-row space-x-12">
+            <figure>
+              <img
+                src="./public/assets/macarons-verts.webp"
+                alt="Coffret de 8 macarons Intemporel"
+                class="h-64 w-64 object-cover"
+              />
+              <figcaption class="sr-only">
+                Coffret de 8 macarons Intemporel
+              </figcaption>
+            </figure>
+
+            <section class="flex flex-col space-y-6">
+              <h2 class="text-3xl">Coffret de 8 macarons Intemporel</h2>
+              <p class="text-3xl font-light">30€</p>
+
+              <section class="flex flex-row space-x-12">
+                <section class="flex flex-col space-y-4">
+                  <h3 class="text-2xl font-medium">Couleurs</h3>
+                  <ul class="flex space-x-4">
+                    <li>
+                      <button
+                        class="bg-green h-10 w-10 rounded border"
+                      ></button>
+                    </li>
+                  </ul>
+                </section>
+
+                <section class="flex flex-col space-y-4">
+                  <h3 class="text-2xl font-medium">Format</h3>
+                  <ul class="flex space-x-4">
+                    <li>
+                      <button class="bg-taupe h-10 w-10 border text-2xl">
+                        S
+                      </button>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+
+              <section class="flex items-center space-x-3">
+                <label for="quantite1" class="sr-only">Quantité</label>
+                <input
+                  type="number"
+                  id="quantite1"
+                  name="quantite1"
+                  min="1"
+                  value="1"
+                  class="w-24 border px-3 py-2"
+                />
+              </section>
+            </section>
+          </article>
+
+          <!-- Article 2 -->
+          <article class="flex flex-row space-x-12">
+            <figure>
+              <img
+                src="./public/assets/thé.webp"
+                alt="Boîte de thé Jardin Bleu Royal"
+                class="h-64 w-64 object-cover"
+              />
+              <figcaption class="sr-only">
+                Boîte de thé Jardin Bleu Royal
+              </figcaption>
+            </figure>
+
+            <section class="flex flex-col space-y-6">
+              <h2 class="text-3xl">Boîte de thé Jardin Bleu Royal</h2>
+              <p class="text-3xl">22€</p>
+
+              <section class="flex flex-row space-x-12">
+                <section class="flex flex-col space-y-4">
+                  <h3 class="text-2xl">Format</h3>
+                  <ul class="flex space-x-4">
+                    <li>
+                      <button class="bg-taupe h-10 w-10 border text-2xl">
+                        S
+                      </button>
+                    </li>
+                  </ul>
+                </section>
+              </section>
+
+              <section class="flex items-center space-x-3">
+                <label for="quantite2" class="sr-only">Quantité</label>
+                <input
+                  type="number"
+                  id="quantite2"
+                  name="quantite2"
+                  min="1"
+                  value="1"
+                  class="w-24 border px-3 py-2"
+                />
+              </section>
+            </section>
+          </article>
+        </section>
+
+        <!-- Synthèse du panier -->
+        <aside class="flex w-80 flex-col gap-4 border-l border-black pl-12">
+          <h2 class="text-4xl">SYNTHESE</h2>
+          <p class="text-2xl">Sous-Total: 120€</p>
+          <p class="text-2xl">Total: 122€</p>
+        </aside>
+      </main>
+      <!-- Boutons d'action -->
+      <section class="flex w-screen flex-row justify-center gap-12 pt-30 pl-8">
+        <a href="./index.html" class="block">
+          <button
+            class="hover:bg-hover w-72 border bg-white py-5 text-2xl text-black hover:text-white"
+          >
+            Continuer mes achats
+          </button>
+        </a>
+        <a href="./index-Paiement.html" class="block">
+          <button
+            class="bg-button w-72 border py-5 text-2xl text-white hover:bg-white hover:text-black"
+          >
+            Continuer
+          </button>
+        </a>
+      </section>
+    </section>
+    <!-- ===== FOOTER ===== -->
+    <footer class="bg-green w-full border-t border-gray-300 px-12 py-12">
+      <section
+        class="mx-auto flex max-w-7xl flex-col justify-between gap-12 md:flex-row"
+      >
+        <!-- Colonne gauche -->
+        <h2 class="font-serif text-4xl tracking-wide text-gray-800">LADURÉE</h2>
+
+        <!-- Colonnes de liens -->
+        <section class="grid w-full grid-cols-1 gap-12 sm:grid-cols-3 md:w-3/5">
+          <!-- Colonne 1 : Produits -->
+          <ul class="space-y-3">
+            <h3 class="mb-3 text-xl font-semibold">Produits</h3>
+            <li>
+              <a href="#" class="hover:subtext hover:underline">Macarons</a>
+            </li>
+            <li>
+              <a href="#" class="hover:subtext hover:underline">Thés</a>
+            </li>
+            <li>
+              <a href="#" class="hover:subtext hover:underline">Chocolats</a>
+            </li>
+          </ul>
+
+          <!-- Colonne 2 : Conditions -->
+          <ul class="space-y-3">
+            <h3 class="mb-3 text-xl font-semibold">Conditions</h3>
+
+            <li>
+              <a href="#" class="hover:subtext hover:underline"
+                >Mentions légales</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:subtext hover:underline"
+                >Politique de Confidentialité</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:subtext hover:underline">CGV</a>
+            </li>
+          </ul>
+
+          <!-- Colonne 3 : Contact -->
+          <ul class="space-y-3">
+            <h3 class="mb-3 text-xl font-semibold">Contact</h3>
+            <li>
+              <a href="#" class="hover:subtext hover:underline"
+                >21 rue de la Démo</a
+              >
+            </li>
+            <li>
+              <a href="#" class="hover:subtext hover:underline">75000, Paris</a>
+            </li>
+            <li>
+              <a href="#" class="hover:subtext hover:underline">France</a>
+            </li>
+          </ul>
+        </section>
+      </section>
+
+      <!-- Ligne du bas -->
+      <section
+        class="text-subtext mt-12 border-t border-gray-300 pt-6 text-center text-sm"
+      >
+        © 2025 Ladurée Paris. Tous droits réservés.
+      </section>
+    </footer>
+  </body>
+</html>

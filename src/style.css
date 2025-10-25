@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme inline {
+  --font-serif: "Cormorant Garamond", serif;
+  --color-bg: var(--clr-bg);
+  --color-fg: var(--clr-fg);
+  --color-blue: var(--clr-blue);
+  --color-pink: var(--clr-pink);
+  --color-green: var(--clr-green);
+  --color-subtext: var(--clr-gray);
+  --color-taupe: var(--clr-taupe);
+  --color-button: var(--clr-black);
+  --color-hover: var(--clr-hover);
+  --color-white: var(--clr-white);
+}
+@layer base {
+  :root {
+    --clr-white: oklch(1 0 0);
+    --clr-fg: oklch(0.973 0.0164 91.55);
+    --clr-bg: oklch(0.9885 0.0098 87.47);
+    --clr-blue: oklch(0.9456 0.0356 211.92);
+    --clr-pink: oklch(0.9199 0.0365 3);
+    --clr-green: oklch(0.911 0.0454 122.3);
+    --clr-gray: oklch(0.6431 0.0132 17.5);
+    --clr-taupe: oklch(0.8985 0.024 88.24);
+    --clr-hover: oklch(0% 0 0);
+    --clr-black: oklch(0.2945 0.0046 67.65);
+  }
+}
