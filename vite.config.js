@@ -1,16 +1,6 @@
 import { defineConfig } from "vite";
-import { resolve } from "path";
-
+import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
+  plugins: [tailwindcss()],
   base: "/Sae301/",
-  build: {
-    rollupOptions: {
-      input: {
-        accueil: resolve(__dirname, "index.html"),
-        paiement: resolve(__dirname, "pages/paiement.html"),
-        panier: resolve(__dirname, "pages/panier.html"),
-        produit: resolve(__dirname, "pages/produit.html"),
-      },
-    },
-  },
 });
