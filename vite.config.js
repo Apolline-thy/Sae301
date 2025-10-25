@@ -2,5 +2,5 @@ import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: "/Sae301",
+  base: "/Sae301/",
 });
